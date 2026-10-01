@@ -1,5 +1,6 @@
 package com.bengj.loans.controller;
 import com.bengj.loans.constants.LoansConstants;
+import com.bengj.loans.dto.LoansContactInfoDto;
 import com.bengj.loans.dto.LoansDto;
 import com.bengj.loans.dto.ResponseDto;
 import com.bengj.loans.service.ILoansService;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 public class LoansController {
 
     private ILoansService loansService;
+    private LoansContactInfoDto loansContactInfoDto;
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createLoan(
@@ -68,4 +70,10 @@ public class LoansController {
         }
     }
 
+    @GetMapping("/contact-info")
+    public ResponseEntity<LoansContactInfoDto> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(loansContactInfoDto);
+    }
 }
