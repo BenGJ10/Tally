@@ -1,6 +1,7 @@
 package com.bengj.accounts.controller;
 
 import com.bengj.accounts.constants.AccountsConstants;
+import com.bengj.accounts.dto.AccountsContactInfoDto;
 import com.bengj.accounts.dto.CustomerDto;
 import com.bengj.accounts.dto.ResponseDto;
 import com.bengj.accounts.service.IAccountsService;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.*;
 public class AccountsController {
 
     private IAccountsService accountsService;
+    private AccountsContactInfoDto accountsContactInfoDto;
 
     @PostMapping("/create")
     public ResponseEntity<ResponseDto> createAccount(@Valid @RequestBody CustomerDto customerDto) {
@@ -68,4 +70,10 @@ public class AccountsController {
         }
     }
 
+    @GetMapping("/contact-info")
+    public ResponseEntity<AccountsContactInfoDto> getContactInfo() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(accountsContactInfoDto);
+    }
 }
