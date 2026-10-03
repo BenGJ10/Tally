@@ -1,0 +1,12 @@
+build:
+  version: "3.0"
+
+cards:
+  message: "Welcome to Tally cards related production APIs "
+  contactDetails:
+    name: "Ben Gregory - Owner"
+    email: "bengj@tally.in"
+    website: "https://tally.in/contact"
+  onCallSupport:
+    - (+91) 2536880188
+    - (+91) 3800192310

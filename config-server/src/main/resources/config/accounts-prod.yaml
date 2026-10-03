@@ -1,0 +1,12 @@
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to Tally accounts related production APIs"
+  contactDetails:
+    name: "Ben Gregory - Owner"
+    email: "bengj@tally.in"
+    website: "https://tally.in/contact"
+  onCallSupport:
+    - (+91) 3800192310
+    - (+91) 2536880188

@@ -1,0 +1,12 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Tally loans related local APIs "
+  contactDetails:
+    name: "Ben Gregory - Owner"
+    email: "bengj@tally.in"
+    website: "https://tally.in/contact"
+  onCallSupport:
+    - (+91) 8848352217
+    - (+91) 9447457014

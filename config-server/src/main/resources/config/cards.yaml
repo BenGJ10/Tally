@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to Tally cards related local APIs "
+  contactDetails:
+    name: "Galvin Glow - Developer"
+    email: "galvin@tally.in"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345

@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to Tally accounts related testing APIs "
+  contactDetails:
+    name: "Leo Trousseau - Tester"
+    email: "leo@tally.in"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
