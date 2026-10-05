@@ -164,6 +164,14 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.5.2</version>
                 <configuration>
+                    <from>
+                        <platforms>
+                            <platform>
+                                <os>linux</os>
+                                <architecture>arm64</architecture>
+                            </platform>
+                        </platforms>
+                    </from>
                     <to>
                         <image>bengj/${project.artifactId}:v1</image>
                     </to>
